@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    background: linear-gradient(black, rgb(39, 38, 38));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#title {
+    font-family: "Press Start 2P", sans-serif;
+    color: wheat;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-clip: padding-box;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.heading {
+    display: flex;
+}
+
+.header-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.header-links a {
+    font-size: large;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: wheat;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px transparent solid;
+    transition: color 0.5s, border 0.3s;
+}
+
+.header-links a:hover {
+    background-color: wheat;
+    border: 1px solid wheat;
+    border-radius: 5%;
+    color: black;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.under-development{
+    color: wheat;
+    font-size: 100px;
+}
