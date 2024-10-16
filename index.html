@@ -56,13 +56,13 @@
             text-decoration: none;
             padding: 10px;
             box-sizing: border-box;
-            border: 1px transparent solid;
-            transition: color 0.3s, border 0.3s;
+            border: 2px solid transparent;
+            transition: color 0.3s, border-color 0.3s, background-color 0.3s, border-radius 0.3s;
         }
 
         .header-links a:hover {
             background-color: wheat;
-            border: 1px solid wheat;
+            border: 2px solid wheat;
             border-radius: 5%;
             color: black;
         }
@@ -70,7 +70,7 @@
         main {
             display: flex;
             justify-content: center;
-            align-items: first baseline;
+            align-items: center;
             flex: 1;
             padding: 20px;
             box-sizing: border-box;
@@ -134,20 +134,44 @@
             border-color: rgb(255, 0, 0);
         }
 
-        .discord-button:hover i {
-            color: rgb(255, 0, 0);
-        }
-
         .discord-button i {
             text-decoration: none;
             color: black;
             font-size: xx-large;
         }
 
+        .discord-button:hover i {
+            color: rgb(255, 0, 0);
+        }
+
         .discord-button p {
             font-weight: bold;
             font-size: large;
             color: wheat;
+        }
+
+        /* Apply & Contact Link Box Styles */
+        .link-box {
+            width: 170px;
+            height: 130px;
+            background-color: rgb(255, 0, 0);
+            color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s, border-radius 0.3s, border-color 0.3s;
+        }
+
+        .link-box:hover {
+            background-color: black;
+            color: rgb(255, 0, 0);
+            border-radius: 50px;
+            border-color: rgb(255, 0, 0);
         }
 
         footer {
@@ -180,8 +204,8 @@
             <h1 id="title">Neutron Community</h1>
         </div>
         <div class="header-links">
-            <a href="contact/contact.html">Contact</a>
-            <a href="apply/apply.html">Apply</a>
+            <a href="contact/contact.html" class="link-box">Contact</a>
+            <a href="apply/apply.html" class="link-box">Apply</a>
         </div>
     </header>
     <main>
@@ -206,6 +230,9 @@
     <footer>
         <p>&copy; 2024 Neutron Community. All Rights Reserved.</p>
     </footer> 
+</body>
+</html>
+
 </body>
 </html>
 
