@@ -73,7 +73,6 @@ main{
 }
 
 {
-
             background: linear-gradient(black, rgb(39, 38, 38));
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -82,7 +81,7 @@ main{
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-        }
+{
 
         #title {
             font-family: "Press Start 2P", sans-serif;
