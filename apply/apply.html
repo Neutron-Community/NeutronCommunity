@@ -9,9 +9,16 @@
     <style>
         .container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            text-align: center;
+        }
+
+        .apply-text {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
         .link-box {
@@ -25,28 +32,33 @@
             text-decoration: none;
             font-size: 20px;
             border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-box::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
         }
 
         .link-box:hover {
             background-color: #AA4A44;
         }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
+        .link-box:hover::before {
+            top: 0;
+            left: 100%;
+            transition: all 0.5s ease;
         }
 
-        .header-links a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        .header-links a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
@@ -61,6 +73,8 @@
     </header>
 
     <div class="container">
+        <p class="apply-text">Welcome to the Neutron Community Staff Application page!<br> Click the button below to apply for our official Staff Team on the Discord Server!</p>
+
         <a href="https://forms.gle/wrtQy6so1UzeVchQ7" class="link-box">
             Apply Here
         </a>
