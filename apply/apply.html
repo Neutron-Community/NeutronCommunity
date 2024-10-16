@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutron Community - Staff Application</title>
     <link rel="stylesheet" href="style.css">
-    <title>Neutron Community</title>
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    
-    <title>Staff Application</title>
+
     <style>
+        /* CSS for the Apply Here button */
         .container {
             display: flex;
-            gap: 20px;
-            justify-content: center; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensures full height of the viewport */
         }
 
         .link-box {
@@ -37,16 +31,25 @@
         .link-box:hover {
             background-color: #AA4A44;
         }
-    </style>
-    
-<div class="container">
-    <a href="https://forms.gle/wrtQy6so1UzeVchQ7" class="link-box">
-        Apply Here
-    </a>
-</div>
 
-</body>
-</html>
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .header-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -58,5 +61,11 @@
             <a href="../contact/contact.html">Contact</a>
         </div>
     </header>
+
+    <div class="container">
+        <a href="https://forms.gle/wrtQy6so1UzeVchQ7" class="link-box">
+            Apply Here
+        </a>
+    </div>
 </body>
 </html>
