@@ -7,6 +7,172 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" type="image/x-icon" href="assets/neutron_community.png">
     <title>Neutron Community</title>
+    <style>
+        body {
+            background: linear-gradient(black, rgb(39, 38, 38));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #title {
+            font-family: "Press Start 2P", sans-serif;
+            color: wheat;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            right: 0;
+            background-clip: padding-box;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            display: flex;
+        }
+
+        .header-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .header-links a {
+            font-size: large;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            color: wheat;
+            text-decoration: none;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px transparent solid;
+            transition: color 0.3s, border 0.3s;
+        }
+
+        .header-links a:hover {
+            background-color: wheat;
+            border: 1px solid wheat;
+            border-radius: 5%;
+            color: black;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: first baseline;
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .maintextbox {
+            max-width: 500px;
+            font-family: "Poppins";
+            font-weight: bolder;
+            font-size: 35px;
+        }
+
+        .mainimage {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+            margin-bottom: -100px;
+        }
+
+        .title {
+            color: wheat;
+            font-size: 1.2em;
+        }
+
+        .subtextbox {
+            font-size: large;
+            margin-top: -35px;
+            width: 500px;
+            color: gray;
+        }
+
+        .discord-button-url {
+            text-decoration: none;
+        }
+
+        .discord-button {
+            justify-content: space-around;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: rgb(114, 137, 218);
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(114, 137, 218);
+            width: 200px;
+            transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+        }
+
+        .discord-button:hover {
+            background-color: black;
+            color: rgb(114, 137, 218);
+            border-radius: 50px;
+        }
+
+        .discord-button:hover i {
+            color: rgb(114, 137, 218);
+        }
+
+        .discord-button i {
+            text-decoration: none;
+            color: black;
+            font-size: xx-large;
+        }
+
+        .discord-button p {
+            font-weight: bold;
+            font-size: large;
+            color: wheat;
+        }
+
+        footer {
+            font-family: "Poppins", sans-serif;
+            color: wheat;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* New styles for the Contact page */
+        .contact-heading {
+            font-size: 35px;
+            color: wheat;
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-email {
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,6 +186,8 @@
     </header>
     <main>
         <div class="main-content">
+            <h2 class="contact-heading">Contact Us</h2>
+            <p class="contact-email">E-Mail: neutron.communitydc@gmail.com</p>
             <img src="assets/neutron_community.png" alt="Neutron Community Logo" class="mainimage">
             <div class="maintextbox">
                 <p class="title">Creating Innovations</p>
