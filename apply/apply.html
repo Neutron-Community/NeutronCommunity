@@ -7,6 +7,65 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        body {
+            background: linear-gradient(black, rgb(39, 38, 38));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #title {
+            font-family: "Press Start 2P", sans-serif;
+            color: wheat;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            right: 0;
+            background-clip: padding-box;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            display: flex;
+        }
+
+        .header-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .header-links a {
+            font-size: large;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            color: wheat;
+            text-decoration: none;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px transparent solid;
+            transition: color 0.3s, border 0.3s;
+        }
+
+        .header-links a:hover {
+            background-color: wheat;
+            border: 1px solid wheat;
+            border-radius: 5%;
+            color: black;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -19,14 +78,14 @@
         .apply-text {
             font-size: 24px;
             margin-bottom: 20px;
-            color:gray;
+            color: gray; 
         }
 
         .link-box {
-            width: 170px;
+            width: 170px; 
             height: 100px;
-            background-color: #FF0000;
-            color: black;
+            background-color: #FF0000; 
+            color: white; 
             display: flex;
             justify-content: center;
             text-decoration: none;
@@ -35,7 +94,7 @@
             border-radius: 10px;
             position: relative;
             overflow: hidden;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease; 
         }
 
         .link-box::before {
@@ -47,17 +106,19 @@
             height: 200%;
             background-color: rgba(255, 255, 255, 0.3);
             transform: rotate(45deg);
-            transition: all 0.5s ease;
+            transition: all 0.5s ease; 
         }
 
         .link-box:hover {
-            background-color: #AA4A44;
+            background-color: black;
+            color: rgb(114, 137, 218); 
+            border-radius: 50px;
         }
 
         .link-box:hover::before {
-            top: 0;
-            left: 100%;
-            transition: all 0.5s ease;
+            top: 0; 
+            left: 100%; 
+            transition: all 0.5s ease; 
         }
 
         .head-apply {
@@ -68,8 +129,14 @@
             align-items: center;
             text-align: center;
             flex-direction: column;
-}
-        
+        }
+
+        footer {
+            font-family: "Poppins", sans-serif;
+            color: wheat;
+            text-align: center;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -94,5 +161,9 @@
             Apply Here
         </a>
     </div>
+
+    <footer>
+        © 2024 Neutron Community
+    </footer>
 </body>
 </html>
