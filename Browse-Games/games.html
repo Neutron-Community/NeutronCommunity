@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutron Community - Browse</title>
+    <link rel="stylesheet" href="style.css">
 
+    <style>
+        body {
+            background: linear-gradient(black, rgb(39, 38, 38));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #title {
+            font-family: "Press Start 2P", sans-serif;
+            color: wheat;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            right: 0;
+            background-clip: padding-box;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            display: flex;
+        }
+
+        .header-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .header-links a {
+            font-size: large;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            color: wheat;
+            text-decoration: none;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px transparent solid;
+            transition: color 1.0s, border 1.0s;
+        }
+
+        .header-links a:hover {
+            background-color: wheat;
+            border: 1px solid wheat;
+            border-radius: 5%;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .apply-heading {
+            font-size: 35px;
+            color: wheat;
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+            margin-bottom: 35px;
+        }
+
+        .apply-text {
+            font-size: large;
+            margin-top: -35px;
+            width: 500px;
+            color: gray;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center; 
+        }
+
+        .link-box {
+            width: 130px;
+            height: 60px;
+            background-color: #FF0000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.6s ease;
+            border: 2px solid red;
+        }
+
+        .link-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+
+        .link-box:hover {
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+        }
+
+        .link-box:hover::before {
+            transform: translateX(0);
+        }
+
+        footer {
+            font-family: "Poppins", sans-serif;
+            color: wheat;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1 id="title">Neutron Community</h1>
+        </div>
+        <div class="header-links">
+            <a href="../index.html">Home</a>
+            <a href="https://neutron-community.github.io/NeutronCommunity/contact/contact.html">Contact</a>
+            <a href="https://neutron-community.github.io/NeutronCommunity/apply/apply.html">Apply</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="apply-heading">Browse Games</h2>
+        <p class="apply-text">Here you can browse through our created games on Neutron and download them! Every single of our games are safe and not a virus or manipulation for your PC!<br> Enjoy Playing!</p>
+        <a href="https://forms.gle/wrtQy6so1UzeVchQ7" class="link-box">
+            Apply Here
+        </a>
+    </div>
+</body>
+</html>
